@@ -4,12 +4,16 @@ const mascotas = [{
     descripcion : 'Perrita aproximadamente de 2 años'
 },{
     imagen: 'imagen/mascotas/Mascota_roko.jpg',
-    nombre: 'roko',
+    nombre: 'Roko',
     descripcion: 'Perrito de 6 años'
 },{
     imagen: 'imagen/mascotas/Mascota_jiji.jpg',
     nombre: 'Jiji',
     descripcion:'Gata aproximadamente de 2 años'
+},{
+    imagen: 'imagen/mascotas/Mascota_ulises.jpg',
+    nombre: 'Ulises',
+    descripcion:'Perro con edad aproximda de 3 años'
 }
 ];
 
