@@ -1,3 +1,4 @@
+// imformacion de las mascotas 
 const mascotas = [{
     imagen : 'imagen/mascotas/Mascota_bluey.jpg',
     nombre : 'Bluey',
@@ -18,23 +19,44 @@ const mascotas = [{
 ];
 
 const mascotasContainer = document.getElementById('mascotasContainer');
-    mascotas.forEach(mascota => {
+
+mascotas.forEach((mascota, index) => {
     const mascotaDiv = document.createElement('div');
     mascotaDiv.classList.add('mascota');
 
     const imagen = document.createElement('img');
     imagen.src = mascota.imagen;
     imagen.alt = mascota.nombre;
-    
+
     const nombre = document.createElement('h2');
     nombre.textContent = mascota.nombre;
-    
+
     const descripcion = document.createElement('p');
     descripcion.textContent = mascota.descripcion;
-    
+
     mascotaDiv.appendChild(imagen);
     mascotaDiv.appendChild(nombre);
     mascotaDiv.appendChild(descripcion);
-    
+
     mascotasContainer.appendChild(mascotaDiv);
+
+    if ((index + 1) % 3 === 0) {
+        const br = document.createElement('br');
+        mascotasContainer.appendChild(br);
+    }
+});
+
+
+//Seccion formularios Adopcion
+document.addEventListener("DOMContentLoaded", function() {
+    const formularioAdopcion = document.getElementById("formularioAdopcion");
+    const mostrarFormularioAdopcion = document.getElementById("mostrarFormularioAdopcion");
+
+    mostrarFormularioAdopcion.addEventListener("click", function() {
+        formularioAdopcion.style.display = "block";
+    });
+    
+    mostrarFormularioPreguntas.addEventListener("click", function() {
+        formularioAdopcion.style.display = "none";
+    });
 });
