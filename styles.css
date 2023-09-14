@@ -55,7 +55,6 @@ nav{
     padding: 10px 0px;
 }
 
-<<<<<<< HEAD
 
 /* parrafo fundacion informacion*/
 
@@ -66,7 +65,7 @@ nav{
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
-=======
+}
 /* formularios mascotas*/
 .oculto{
     display: none;
@@ -76,7 +75,6 @@ nav{
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 400px;
->>>>>>> e8b9c318c8b609c07cd9c92a1be4390fc5b4a9aa
 }
 
 .subtitulos {

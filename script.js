@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const formularioAdopcion = document.getElementById("formularioAdopcion");
     const mostrarFormularioAdopcion = document.getElementById("mostrarFormularioAdopcion");
 
-<<<<<<< HEAD
     let formularioVisible = false; 
 
     mostrarFormularioAdopcion.addEventListener("click", function() {
@@ -65,15 +64,3 @@ document.addEventListener("DOMContentLoaded", function() {
         formularioVisible = !formularioVisible; 
     });
 });
-
-
-=======
-    mostrarFormularioAdopcion.addEventListener("click", function() {
-        formularioAdopcion.style.display = "block";
-    });
-    
-    mostrarFormularioPreguntas.addEventListener("click", function() {
-        formularioAdopcion.style.display = "none";
-    });
-});
->>>>>>> e8b9c318c8b609c07cd9c92a1be4390fc5b4a9aa
