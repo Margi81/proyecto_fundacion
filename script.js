@@ -52,11 +52,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const formularioAdopcion = document.getElementById("formularioAdopcion");
     const mostrarFormularioAdopcion = document.getElementById("mostrarFormularioAdopcion");
 
+    let formularioVisible = false; 
+
     mostrarFormularioAdopcion.addEventListener("click", function() {
-        formularioAdopcion.style.display = "block";
-    });
-    
-    mostrarFormularioPreguntas.addEventListener("click", function() {
-        formularioAdopcion.style.display = "none";
+        if (formularioVisible) {
+            formularioAdopcion.style.display = "none"; 
+        } else {
+            formularioAdopcion.style.display = "block"; 
+        }
+        
+        formularioVisible = !formularioVisible; 
     });
 });
+
+

@@ -8,66 +8,105 @@
     <script defer src="script.js"></script>
     <title>Fundación de Rescate de Mascotas</title>
 </head>
-<body>
-     <header>
-        <a href="#" class="logo_fundacion">
-        <img src="imagen/mascotas/Logo_fundacion.jpg" alt="logo_De_fundacion">
-        <h2 class="fundacion_de_rescate">FUNDACION DE RESCATE</h2>
-     </div>
-     <nav>
-        <a href="#" class="nav-link">Inicio</a>
-        <a href="#" class="nav-link">Sobre Nosotros</a>
-        <a href="#" class="nav-link">Contáctanos</a>
-        <a href="#" class="nav-link">Donación</a>
-     </nav>
-    </header>  
 
+<body>
+    <header>
+        <div class="logo_fundacion">
+            <img src="imagen/mascotas/Logo_fundacion.jpg" alt="logo_De_fundacion">
+            <h2 class="fundacion_de_rescate">FUNDACIÓN DE RESCATE</h2>
+        </div>
+        <nav>
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Sobre Nosotros</a>
+            <a href="#" class="nav-link">Contáctanos</a>
+            <a href="#" class="nav-link">Donación</a>
+        </nav>
+    </header>
+
+    
+    <div class="fundacion_info">
+        <div class="texto_fundacion">
+            <p>Nuestra fundación se dedica a rescatar y encontrar hogares amorosos para animales necesitados. Nuestro objetivo es proporcionar una segunda oportunidad a estas mascotas y promover la adopción responsable.</p>
+        </div>
+        <div class="imagen_fundacion">
+            <img src="" alt="Rescates de la fundación">
+        </div>
+    </div>
+  
     <div class="subtitulos">
         <div class="subtitulo" id="mostrarFormularioAdopcion">
             <h2>¿Quieres adoptar?</h2>
             <p>Contáctanos para más información</p>
-        </div>
-        <div class="subtitulo" id="mostrarFormularioPreguntas">
-            <h2>¿Tienes preguntas?</h2>
-            <p>Estamos aquí para ayudarte</p>
-        </div>
+        </div>     
     </div>
 
-    <div class="formularios_container">
+    <div class="formulario_container">
         <div id="formularioAdopcion" class="oculto">
             <h2>Formulario de Adopción</h2>
             <form action="#" method="post">
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
 
-            <label for="celular">Celular:</label>
-            <input type="tel" id="celular" name="celular" required>
-            
-            <label for="experiencia">¿Ha adoptado mascotas antes?</label>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+
+                <label for="experiencia">¿Ha adoptado mascotas antes?</label>
                 <select id="experiencia" name="experiencia" required>
                     <option value="-">-</option>
                     <option value="si">Sí</option>
                     <option value="no">No</option>
                 </select>
 
-            <label for="motivacion">¿Por qué deseas adoptar una mascota?</label>
-            <textarea id="motivacion" name="motivacion" rows="4" required></textarea>
+                <label for="motivacion">¿Por qué deseas adoptar una mascota?</label>
+                <textarea id="motivacion" name="motivacion" rows="4" required></textarea>
 
-            <label for="recurso">¿Cuentas con los recursos económicos necesarios para el cuidado de una mascota? </label>
+                <label for="recurso">¿Cuentas con los recursos económicos necesarios para el cuidado de una mascota? </label>
                 <select id="recurso" name="recurso" required>
                     <option value="-">-</option>
                     <option value="si">Sí</option>
                     <option value="no">No</option>
                 </select>
 
-            <button type="submit">Enviar Formulario</button>
-        </form>
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </div>
     </div>
-   
+
+    <div class="subtitulos">
+        <h2 class="titulo-servicios">Servicios</h2>
+    </div>   
+
+    <div class="subtitulos">
+        <div class="subtitulo">
+            <input type="checkbox" id="mostrarVeterinaria">
+            <label for="mostrarVeterinaria">Ver Veterinaria</label>
+            <div class="servicio" id="veterinaria">
+                <h3>servicio de veterinaria</h3>
+                <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
+            </div>
+        </div>
+        <div class="subtitulo">
+            <input type="checkbox" id="mostrarDesparasitacion">
+            <label for="mostrarDesparasitacion">Ver Desparasitación</label>
+            <div class="servicio" id="desparasitacion">
+                <h3>Desparasitación</h3>
+                <p>Servicios de desparasitación...</p>
+            </div>
+        </div>
+        <div class="subtitulo">
+            <input type="checkbox" id="mostrarMaltratoAnimal">
+            <label for="mostrarMaltratoAnimal">Ver Qué hacer en caso de maltrato animal</label>
+            <div class="servicio" id="maltratoAnimal">
+                <h3>¿Donde puedes denunciar maltrato animal?</h3>
+                <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: Fotos, videos y testimonios que sean útiles a la hora de instaurar la denuncia. "preguntar si se puede colocar link" Escribenos al WhatsApp 320 360 6061 o ven a las instalaciones del CAPA y adopta. Centro de Atención y Protección Animal.</p>
+            </div>
+        </div>
+    </div>
+
 
     <main>
         <h3 class="title_mascotas">Animalitos que buscan su hogar</h3>
@@ -79,4 +118,5 @@
         <p>&copy; 2023 Fundación de Rescate de Mascotas</p>
     </footer>
 </body>
+
 </html>
