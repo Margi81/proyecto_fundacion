@@ -55,6 +55,7 @@ nav{
     padding: 10px 0px;
 }
 
+<<<<<<< HEAD
 
 /* parrafo fundacion informacion*/
 
@@ -65,8 +66,71 @@ nav{
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
+=======
+/* formularios mascotas*/
+.oculto{
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+>>>>>>> e8b9c318c8b609c07cd9c92a1be4390fc5b4a9aa
 }
 
+.subtitulos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.subtitulo {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.subtitulo:hover {
+    background-color: #f5f5f5;
+}
+
+form label,
+form input,
+form select,
+form textarea {
+    display: block;
+    margin-bottom: 15px; 
+}
+
+button {
+    margin-top: 10px;
+}
+
+
+
+/* Contenedor mascotas*/
+.grid-container {
+    display: grid;    
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.title_mascotas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .texto_fundacion {
     flex: 1;
