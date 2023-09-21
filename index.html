@@ -11,18 +11,19 @@
 
 <body>
     <header>
-<<<<<<< HEAD
         <div class="logo_fundacion">
             <img src="imagen/mascotas/Logo_fundacion.jpg" alt="logo_De_fundacion">
             <h2 class="fundacion_de_rescate">FUNDACIÓN DE RESCATE</h2>
         </div>
         <nav>
             <a href="#" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Sobre Nosotros</a>
+            <a href="sobreNosotros.html" class="nav-link" id="quienes-somos-link">Quiénes Somos</a>
             <a href="#" class="nav-link">Contáctanos</a>
             <a href="#" class="nav-link">Donación</a>
         </nav>
     </header>
+
+
 
     
     <div class="fundacion_info">
@@ -30,7 +31,7 @@
             <p>Nuestra fundación se dedica a rescatar y encontrar hogares amorosos para animales necesitados. Nuestro objetivo es proporcionar una segunda oportunidad a estas mascotas y promover la adopción responsable.</p>
         </div>
         <div class="imagen_fundacion">
-            <img src="" alt="Rescates de la fundación">
+            <img src="imagen/mascotas/Nombre_fundacion.jpeg" alt="Rescates de la fundación">
         </div>
     </div>
   
@@ -78,135 +79,38 @@
     </div>
 
     <div class="subtitulos">
-        <h2 class="titulo-servicios">Servicios</h2>
+        <h2 class="titulo-servicios">Nuestros Servicios</h2>
     </div>   
 
     <div class="subtitulos">
         <div class="subtitulo">
             <input type="checkbox" id="mostrarVeterinaria">
-            <label for="mostrarVeterinaria">Ver Veterinaria</label>
+            <label for="mostrarVeterinaria">Servicio De Veterinaria</label>
             <div class="servicio" id="veterinaria">
-                <h3>servicio de veterinaria</h3>
                 <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
             </div>
         </div>
         <div class="subtitulo">
             <input type="checkbox" id="mostrarDesparasitacion">
-            <label for="mostrarDesparasitacion">Ver Desparasitación</label>
+            <label for="mostrarDesparasitacion">¿Cómo ser hogar de paso?</label>
             <div class="servicio" id="desparasitacion">
                 <h3>Desparasitación</h3>
-                <p>Servicios de desparasitación...</p>
+                <p>Ser hogar de paso no es una tarea fácil, así mismo debemos estudiar si puedes ser hogar de paso,
+                    los requerimientos son:
+                    <ul>-Entender la responsabilidad que es tener un animal en casa, en especial si es un cachorro.</ul>
+                    <ul>-Uno de los puntos principales es que debes tener tiempo para ellos y ayudarnos con su educación.</ul>
+                    <ul>-Muchos de los rescatados no cuentan con ningún elemento, por está razón buscamos espacios que nos puedan ayudar con los elementos básicos de su permanencia.</ul> 
+                </p>
             </div>
         </div>
         <div class="subtitulo">
             <input type="checkbox" id="mostrarMaltratoAnimal">
-            <label for="mostrarMaltratoAnimal">Ver Qué hacer en caso de maltrato animal</label>
+            <label for="mostrarMaltratoAnimal">¿Donde puedes denunciar maltrato animal?</label>
             <div class="servicio" id="maltratoAnimal">
-                <h3>¿Donde puedes denunciar maltrato animal?</h3>
                 <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: Fotos, videos y testimonios que sean útiles a la hora de instaurar la denuncia. "preguntar si se puede colocar link" Escribenos al WhatsApp 320 360 6061 o ven a las instalaciones del CAPA y adopta. Centro de Atención y Protección Animal.</p>
             </div>
         </div>
     </div>
-
-
-    <main>
-        <h3 class="title_mascotas">Animalitos que buscan su hogar</h3>
-        <div class="grid-container" id="mascotasContainer">
-=======
-        <a href="#" class="logo_fundacion">
-            <img src="imagen/mascotas/Logo_fundacion.jpg" alt="logo_De_fundacion">
-            <h2 class="fundacion_de_rescate">FUNDACION DE RESCATE</h2>
-            </div>
-            <nav>
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">Sobre Nosotros</a>
-                <a href="#" class="nav-link">Contáctanos</a>
-                <a href="#" class="nav-link">Donación</a>
-            </nav>
-    </header>
-
-    <div class="subtitulos">
-        <div class="subtitulo" id="mostrarFormularioAdopcion">
-            <h2>¿Quieres adoptar?</h2>
-            <p>Contáctanos para más información</p>
->>>>>>> e8b9c318c8b609c07cd9c92a1be4390fc5b4a9aa
-        </div>
-        <div class="subtitulo" id="mostrarFormularioPreguntas">
-            <h2>¿conoces nuestros servicios?</h2>
-            <p>Nosotros te ayudamos</p>
-        </div>
-    </div>
-
-    <div class="formularios_container">
-        <div id="formularioAdopcion" class="oculto">
-            <h2>Formulario de Adopción</h2>
-            <form action="#" method="post">
-
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="celular">Celular:</label>
-                <input type="tel" id="celular" name="celular" required>
-
-                <label for="experiencia">¿Ha adoptado mascotas antes?</label>
-                <select id="experiencia" name="experiencia" required>
-                    <option value="-">-</option>
-                    <option value="si">Sí</option>
-                    <option value="no">No</option>
-                </select>
-
-                <label for="motivacion">¿Por qué deseas adoptar una mascota?</label>
-                <textarea id="motivacion" name="motivacion" rows="4" required></textarea>
-
-                <label for="recurso">¿Cuentas con los recursos económicos necesarios para el cuidado de una mascota?
-                </label>
-                <select id="recurso" name="recurso" required>
-                    <option value="-">-</option>
-                    <option value="si">Sí</option>
-                    <option value="no">No</option>
-                </select>
-
-                <button type="submit">Enviar Formulario</button>
-            </form>
-        </div>
-    </div>
-    -.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.
-    <div class="service_container">
-        <div id="mostrarFormularioPreguntas" class="oculto">
-            <h2>veterinaria de confianza</h2>
-            <form action="#" method="post">
-
-                <label form="nombre">Nombre veterinaria:</label>
-                <p>CENTRAL DE URGENCIAS VETERINARIAS</p>
-                <label form="numero">Numero de contacto veterinaria</label>
-                <p>3133216290</p>
-        </div>
-        +´+´+´+´+´+´+´+´+´+´+´+´+´´+´+´+´+´
-
-        <main class="service_container">
-            <div class="service">
-                <h7>servicio de veterinaria </h7>
-                <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de
-                    confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
-            </div>
-            <div class="service">
-                <h7>Donde puedes denunciar maltrato animal </h7>
-                <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo
-                    durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es
-                    momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: Fotos, videos y
-                    testimonios que sean útiles a la hora de instaurar la denuncia.
-                    "preguntar si se peude colocar link" Escribenos al WhatsApp 320 360 6061 o ven a las instalaciones
-                    del CAPA y adopta. Centro de Atención y Protección Animal.
-                </p>
-            </div>
-            <div class="service">
-                <h7>servicio de...</h7>
-                <p>....</p>     
-            </div>
-        </main>
 
         <main>
             <h3 class="title_mascotas">Animalitos que buscan su hogar</h3>
@@ -219,8 +123,4 @@
         </footer>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> e8b9c318c8b609c07cd9c92a1be4390fc5b4a9aa

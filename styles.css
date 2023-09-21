@@ -56,6 +56,8 @@ nav{
 }
 
 
+
+
 /* parrafo fundacion informacion*/
 
 .fundacion_info {
@@ -66,6 +68,12 @@ nav{
     margin: 20px;
     border-radius: 5px;
 }
+
+.imagen_fundacion img{
+    max-width: 300px;
+    border-radius: 5px;
+}
+
 /* formularios mascotas*/
 .oculto{
     display: none;
@@ -79,8 +87,9 @@ nav{
 
 .subtitulos {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;   
 }
 
 .subtitulo {
@@ -90,7 +99,7 @@ nav{
     border: 1px solid #ccc;
     padding: 10px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 18px;
 }
 
 .subtitulo:hover {
@@ -109,7 +118,18 @@ button {
     margin-top: 10px;
 }
 
-
+.titulo-servicios{
+    border-radius: 28px;
+    background-color: #435334;
+    color: #35155D;
+    display: flex;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    width: 213px;
+    height: 37px;
+    align-items: center;
+}
 
 /* Contenedor mascotas*/
 .grid-container {
@@ -193,9 +213,10 @@ button {
 /* Estilos para los botones de servicios */
 .subtitulos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     margin-top: 20px;
+    align-content: space-around;
 }
 
 .subtitulo {
@@ -238,7 +259,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* Estilos para mostrar los contenedores de servicios cuando se verifica el checkbox */
+/* mostrar los contenedores de servicios cuando se verifica el checkbox */
 input[type="checkbox"]:checked ~ .servicio {
     display: block;
 }
