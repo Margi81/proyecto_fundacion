@@ -46,23 +46,37 @@ mascotas.forEach((mascota, index) => {
     }
 });
 
-
-//Seccion formularios Adopcion
-document.addEventListener("DOMContentLoaded", function() {
+ //Seccion formularios Adopcion
+ document.addEventListener("DOMContentLoaded", function () {
     const formularioAdopcion = document.getElementById("formularioAdopcion");
     const mostrarFormularioAdopcion = document.getElementById("mostrarFormularioAdopcion");
 
-    let formularioVisible = false; 
-
-    mostrarFormularioAdopcion.addEventListener("click", function() {
-        if (formularioVisible) {
-            formularioAdopcion.style.display = "none"; 
-        } else {
-            formularioAdopcion.style.display = "block"; 
-        }
-        
-        formularioVisible = !formularioVisible; 
+    mostrarFormularioAdopcion.addEventListener("click", function () {
+        formularioAdopcion.classList.toggle("oculto");
     });
 });
 
-
+//Seccion servicios
+function toggleInfo(servicio) {
+    const infoElement = document.getElementById(`${servicio}-info`);
+  
+    if (infoElement.classList.contains('hidden')) {
+      const allInfoElements = document.querySelectorAll('.info');
+      allInfoElements.forEach(element => element.classList.add('hidden'));
+  
+      infoElement.classList.remove('hidden');
+      infoElement.classList.add('visible');
+    } else {
+      infoElement.classList.remove('visible');
+      infoElement.classList.add('hidden');
+    }
+  }
+  
+  // Evitar que la información se oculte al hacer clic en el texto
+  const servicios = document.querySelectorAll('.servicio');
+  servicios.forEach(servicio => {
+    servicio.addEventListener('click', (event) => {
+      event.stopPropagation(); // Evitar que el clic se propague y oculte la información
+    });
+  });
+  

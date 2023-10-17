@@ -16,14 +16,12 @@
             <h2 class="fundacion_de_rescate">FUNDACIÓN DE RESCATE</h2>
         </div>
         <nav>
-            <a href="#" class="nav-link">Inicio</a>
+            <a href="index.html" class="nav-link">Inicio</a>
             <a href="sobreNosotros.html" class="nav-link" id="quienes-somos-link">Quiénes Somos</a>
             <a href="#" class="nav-link">Contáctanos</a>
             <a href="#" class="nav-link">Donación</a>
         </nav>
-    </header>
-
-
+    </header>     
 
     
     <div class="fundacion_info">
@@ -36,17 +34,17 @@
     </div>
   
     <div class="subtitulos">
-        <div class="subtitulo" id="mostrarFormularioAdopcion">
+        <div class="subtitulo_formulario" id="mostrarFormularioAdopcion">
             <h2>¿Quieres adoptar?</h2>
             <p>Contáctanos para más información</p>
         </div>     
     </div>
 
-    <div class="formulario_container">
+    <!-- Formulario de adopción -->
+    <div class="formulario_container" id="formularioAdopcionContainer">
         <div id="formularioAdopcion" class="oculto">
             <h2>Formulario de Adopción</h2>
-            <form action="#" method="post">
-
+            <form action="#" method="post" id="formularioAdopcionForm">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -78,39 +76,52 @@
         </div>
     </div>
 
-    <div class="subtitulos">
-        <h2 class="titulo-servicios">Nuestros Servicios</h2>
-    </div>   
+    <h1 class="titulo">Nuestros Servicios</h1>
 
-    <div class="subtitulos">
-        <div class="subtitulo">
-            <input type="checkbox" id="mostrarVeterinaria">
-            <label for="mostrarVeterinaria">Servicio De Veterinaria</label>
-            <div class="servicio" id="veterinaria">
-                <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
+    <!-- contendor de servicios -->
+    <div class="contenedor-servicios">
+        <div class="fila-servicios">
+          <div class="servicio" onclick="toggleInfo('veterinaria')">
+            <h3>Veterinaria</h3>
+            <div id="veterinaria-info" class="info hidden">
+              <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
             </div>
-        </div>
-        <div class="subtitulo">
-            <input type="checkbox" id="mostrarDesparasitacion">
-            <label for="mostrarDesparasitacion">¿Cómo ser hogar de paso?</label>
-            <div class="servicio" id="desparasitacion">
-                <h3>Desparasitación</h3>
-                <p>Ser hogar de paso no es una tarea fácil, así mismo debemos estudiar si puedes ser hogar de paso,
-                    los requerimientos son:
-                    <ul>-Entender la responsabilidad que es tener un animal en casa, en especial si es un cachorro.</ul>
-                    <ul>-Uno de los puntos principales es que debes tener tiempo para ellos y ayudarnos con su educación.</ul>
-                    <ul>-Muchos de los rescatados no cuentan con ningún elemento, por está razón buscamos espacios que nos puedan ayudar con los elementos básicos de su permanencia.</ul> 
-                </p>
+          </div>
+    
+          <div class="servicio" onclick="toggleInfo('maltratoAnimal')">
+            <h3>Maltrato Animal</h3>
+            <div id="maltratoAnimal-info" class="info hidden">
+              <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo 
+                durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es 
+                momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: 
+                Fotos, videos y testimonios que sean útiles a la hora de instaurar la denuncia. 
+                "preguntar si se puede colocar link" Escribenos al WhatsApp 320 360 6061 
+                o ven a las instalaciones del CAPA y adopta. Centro de Atención y Protección Animal.</p>
             </div>
+          </div>
+    
+          <div class="servicio" onclick="toggleInfo('desparasitacion')">
+            <h3>Desparasitación</h3>
+            <div id="desparasitacion-info" class="info hidden">
+              <p>Ser hogar de paso no es una tarea fácil, así mismo debemos estudiar si puedes ser hogar de paso,
+                los requerimientos son:
+                <ul>-Entender la responsabilidad que es tener un animal en casa, en especial si es un cachorro.</ul>
+                <ul>-Uno de los puntos principales es que debes tener tiempo para ellos y ayudarnos con su educación.</ul>
+                <ul>-Muchos de los rescatados no cuentan con ningún elemento, por está razón buscamos espacios que nos puedan ayudar con los elementos básicos de su permanencia.</ul> 
+              </p>
+              </div>
+          </div>
         </div>
-        <div class="subtitulo">
-            <input type="checkbox" id="mostrarMaltratoAnimal">
-            <label for="mostrarMaltratoAnimal">¿Donde puedes denunciar maltrato animal?</label>
-            <div class="servicio" id="maltratoAnimal">
-                <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: Fotos, videos y testimonios que sean útiles a la hora de instaurar la denuncia. "preguntar si se puede colocar link" Escribenos al WhatsApp 320 360 6061 o ven a las instalaciones del CAPA y adopta. Centro de Atención y Protección Animal.</p>
+    
+       <!--  <div class="fila-servicios">
+          <div class="servicio" onclick="toggleInfo('fiestas')">
+            <h3>Fiestas para Mascotas</h3>
+            <div id="fiestas-info" class="info hidden">
+              <p>Celebra ocasiones especiales con tus mascotas y otros amantes de los animales.</p>
             </div>
-        </div>
-    </div>
+          </div>
+          </div> 
+      </div>-->
 
         <main>
             <h3 class="title_mascotas">Animalitos que buscan su hogar</h3>

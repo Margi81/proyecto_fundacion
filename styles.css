@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Comfortaa:wght@300&family=Josefin+Sans:wght@100&family=Lilita+One&display=swap');/**/
 
-body{
+/* Estilos para el cuerpo de la página */
+body {
     font-family: 'Bricolage Grotesque', sans-serif;
     margin: 0;
 }
 
-
-/* Diseño cabecera de la pagina web*/
-header{
+/* Estilos para el encabezado */
+header {
     display: flex;
     min-height: 70px;
     background-color: #CEDEBD;
@@ -16,50 +16,52 @@ header{
     padding: 10px;
 }
 
-.logo_fundacion{
+/* Estilos para el logo de la fundación */
+.logo_fundacion {
     display: flex;
     align-items: center;
 }
 
-.logo_fundacion img{
+.logo_fundacion img {
     height: 60px;
     border-radius: 30px;
 }
 
-.fundacion_de_rescate{
+/* Estilos para el texto de la fundación */
+.fundacion_de_rescate {
     margin-inline-start: 19px;
 }
 
+/* Estilos para enlaces */
 a {
     text-decoration: none;
     color: #5B9A8B;
 }
 
-nav a{
+/* Estilos para enlaces en la barra de navegación */
+nav a {
     font-weight: 600;
     padding-right: 10px;
-
 }
 
-nav a:hover{
-    color:#183D3D;
+/* Estilos para enlaces en la barra de navegación al pasar el ratón */
+nav a:hover {
+    color: #183D3D;
 }
 
-@media (max-width:700px){
-    header{
+/* Estilos para el diseño responsivo del encabezado */
+@media (max-width: 700px) {
+    header {
         flex-direction: column;
     }
 }
 
-nav{
+/* Estilos para la barra de navegación */
+nav {
     padding: 10px 0px;
 }
 
-
-
-
-/* parrafo fundacion informacion*/
-
+/* Estilos para la sección de información de la fundación */
 .fundacion_info {
     display: flex;
     align-items: center;
@@ -69,104 +71,28 @@ nav{
     border-radius: 5px;
 }
 
-.imagen_fundacion img{
-    max-width: 300px;
-    border-radius: 5px;
-}
-
-/* formularios mascotas*/
-.oculto{
-    display: none;
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 400px;
-}
-
-.subtitulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;   
-}
-
-.subtitulo {
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 0 10px;
-    border-radius: 18px;
-}
-
-.subtitulo:hover {
-    background-color: #f5f5f5;
-}
-
-form label,
-form input,
-form select,
-form textarea {
-    display: block;
-    margin-bottom: 15px; 
-}
-
-button {
-    margin-top: 10px;
-}
-
-.titulo-servicios{
-    border-radius: 28px;
-    background-color: #435334;
-    color: #35155D;
-    display: flex;
-    max-width: 400px;
-    padding: 20px;
-    margin: 10px;
-    width: 213px;
-    height: 37px;
-    align-items: center;
-}
-
-/* Contenedor mascotas*/
-.grid-container {
-    display: grid;    
-    align-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.title_mascotas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto_fundacion {
-    flex: 1;
-}
-
-.texto_fundacion8 p {
-    margin: 10px; 
-}
-
+/* Estilos para imágenes en la sección de información de la fundación */
 .imagen_fundacion img {
     max-width: 300px;
     border-radius: 5px;
 }
 
+/* Estilos para el contenedor del formulario de adopción */
+.formulario_container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 
+/* Estilos para los subtítulos */
+.subtitulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
 
-
-/* formularios mascotas */
+/* mostar y ocultar formulario de adopcion */
 .oculto {
     display: none;
     background-color: #f0f0f0;
@@ -178,95 +104,101 @@ button {
     text-align: left;
 }
 
-/* Estilos para los subtítulos de servicios y los botones */
-.subtitulos {
-    display: flex;
-    justify-content: center; /* Centra los subtítulos horizontalmente */
-    margin-top: 20px;
-}
-
-.subtitulo {
+/* Estilos para los subtítulos del formulario de adopción */
+.subtitulo_formulario {
+    flex: 1;
     text-align: center;
     cursor: pointer;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 18px;
 }
 
-.subtitulo:hover {
-    background-color: #f5f5f5;
-}
-
-form label,
-form input,
-form select,
-form textarea {
-    display: block;
-    margin-bottom: 15px;
-}
-
-button {
-    margin-top: 10px;
-}
-
-/* Estilos para los botones de servicios */
-.subtitulos {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-top: 20px;
-    align-content: space-around;
-}
-
-.subtitulo {
-    text-align: center;
+/* Estilos para el formulario de adopción */
+#formularioAdopcionForm {
     cursor: pointer;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 0 10px;
+    border-radius: 18px;
 }
 
-input[type="checkbox"] {
-    display: none;
+/* Estilos para etiquetas en el formulario de adopción */
+#formularioAdopcionForm label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-/* Estilos para los contenedores de servicios */
+/* Estilos para los inputs, selects y textareas en el formulario de adopción */
+#formularioAdopcionForm input,
+#formularioAdopcionForm select,
+#formularioAdopcionForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón en el formulario de adopción */
+#formularioAdopcionForm button {
+    width: 37%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Estilos para el título */
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de servicios */
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las filas de servicios */
+.fila-servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para cada servicio */
 .servicio {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 400px;
-    text-align: left;
-}
-
-.oculto {
-    display: none;
-}
-
-/* Estilos para mostrar los contenedores de servicios */
-.servicio {
-    background-color: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 400px;
-    text-align: left;
+    cursor: pointer;
+    flex: 0 0 30%;
+}
+
+/* Estilos al pasar el ratón sobre cada servicio */
+.servicio:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para la información de cada servicio */
+.info {
+    padding: 10px;
     display: none;
 }
 
-/* mostrar los contenedores de servicios cuando se verifica el checkbox */
-input[type="checkbox"]:checked ~ .servicio {
+/* Estilos para elementos ocultos */
+.hidden {
+    display: none;
+}
+
+/* Estilos para elementos visibles */
+.visible {
     display: block;
 }
 
-/* Contenedor mascotas*/
+/* Estilos para el contenedor de mascotas */
 .grid-container {
-    display: grid;    
+    display: grid;
     align-content: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -277,12 +209,14 @@ input[type="checkbox"]:checked ~ .servicio {
     max-width: 1200px;
 }
 
-.title_mascotas{
+/* Estilos para el título de mascotas */
+.title_mascotas {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Estilos para cada mascota */
 .mascota {
     font-family: 'Assistant', sans-serif;
     background-color: #E1ECC8;
@@ -290,15 +224,17 @@ input[type="checkbox"]:checked ~ .servicio {
     padding: 10px;
     text-align: center;
     max-width: 300px;
-    margin: 0 auto; 
+    margin: 0 auto;
     transition: background-color 0.3s;
 }
 
-.mascota:hover{
+/* Estilos al pasar el ratón sobre cada mascota */
+.mascota:hover {
     background-color: #A4D0A4;
     color: #35155D;
 }
 
+/* Estilos para las imágenes de cada mascota */
 .mascota img {
     max-width: 100%;
     height: 200px;
@@ -306,9 +242,9 @@ input[type="checkbox"]:checked ~ .servicio {
     margin-bottom: 10px;
 }
 
-
+/* Estilos para el pie de página */
 footer {
     text-align: center;
     padding: 5px;
     background-color: cadetblue;
-  }
+}
