@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+const bannerImage1 = document.getElementById("banner-image");
+const bannerImage2 = document.getElementById("banner-image-2");
+const images = ["/imagen/banner/banner_1.jpeg", "/imagen/banner/banner_2.jpeg"];
+let currentIndex = 0;
+
+function changeImage() {
+    if (currentIndex % 2 === 0) {
+        bannerImage1.src = images[0];
+        bannerImage2.src = images[1];
+    } else {
+        bannerImage1.src = images[1];
+        bannerImage2.src = images[0];
+    }
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Cambia la imagen cada 5 segundos
+setInterval(changeImage, 5000);
+
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // Datos de los perritos (nombre, imagen, descripción, etc.)
   const dogsData = [

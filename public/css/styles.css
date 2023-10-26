@@ -6,6 +6,34 @@ body {
     margin: 0;
 }
 
+/* Estilos del BANNER */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Fin de estilos del BANNER */
+
+
+
+
 /* estilos de encabezado y navegación */
 header {
     background-color: #333;
