@@ -1,26 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-const bannerImage1 = document.getElementById("banner-image");
-const bannerImage2 = document.getElementById("banner-image-2");
-const images = ["/imagen/banner/banner_1.jpeg", "/imagen/banner/banner_2.jpeg"];
-let currentIndex = 0;
-
-function changeImage() {
-    if (currentIndex % 2 === 0) {
-        bannerImage1.src = images[0];
-        bannerImage2.src = images[1];
-    } else {
-        bannerImage1.src = images[1];
-        bannerImage2.src = images[0];
-    }
-    currentIndex = (currentIndex + 1) % images.length;
-}
-
-// Cambia la imagen cada 5 segundos
-setInterval(changeImage, 5000);
-
-});
-
-
 document.addEventListener("DOMContentLoaded", function() {
   // Datos de los perritos (nombre, imagen, descripción, etc.)
   const dogsData = [
@@ -89,30 +66,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//Seccion servicios
-function toggleInfo(servicio) {
-  const infoElement = document.getElementById(`${servicio}-info`);
-
-  if (infoElement.classList.contains('hidden')) {
-    const allInfoElements = document.querySelectorAll('.info');
-    allInfoElements.forEach((element) => element.classList.add('hidden'));
-
-    infoElement.classList.remove('hidden');
-    infoElement.classList.add('visible');
-  } else {
-    infoElement.classList.remove('visible');
-    infoElement.classList.add('hidden');
+function toggleService(service) {
+    const details = document.getElementById(`${service}Details`);
+  
+    if (details) {
+      details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
   }
-}
-
-// Asignar la función a los elementos de servicio
-const servicios = document.querySelectorAll('.servicio');
-servicios.forEach((servicio) => {
-  servicio.addEventListener('click', (event) => {
-    event.stopPropagation(); // Evitar que el clic se propague y oculte la información
-    const servicioId = servicio.getAttribute('id');
-    toggleInfo(servicioId);
-  });
-});
-
   

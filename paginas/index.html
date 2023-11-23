@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <script src="/public/js/script.js"></script>
     <title>Fundación de Rescate de Mascotas</title>
 </head>
@@ -17,17 +17,29 @@
             <h2 class="fundacion_de_rescate">FUNDACIÓN DE RESCATE</h2>
         </div>
         <nav>
-            <a href="/paginas/index.html" class="nav-link">Inicio</a>
-            <a href="/paginas/sobreNosotros.html" class="nav-link" id="quienes-somos-link">Quiénes Somos</a>
-            <a href="/paginas/Adopta.html" class="nav-link" id="adopta-pag">Adopta!</a>
-            <a href="#" class="nav-link">Donación</a>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sobreNosotros.html" class="nav-link" id="quienes-somos-link">Quiénes Somos</a>
+            <a href="Adopta.html" class="nav-link" id="adopta-pag">Adopta!</a>
+            <a href="donacion.html" class="nav-link">Donación</a>
         </nav>
     </header>     
 
-    <div class="banner">
-      <img id="banner-image" src="/imagen/banner/banner_1.jpeg" alt="Banner de la Fundación">
-      <img id="banner-image-2" src="/imagen/banner/banner_2.jpeg" alt="Banner de la Fundación">
-  </div>
+    <div class="slider_box">
+      <ul>
+          <li>
+              <img src="/imagen/banner/banner_1.jpeg" alt=""> 
+          </li>
+          <li>
+              <img src="/imagen/banner/banner_2.jpeg" alt="">
+          </li>
+          <li>
+              <img src="/imagen/banner/banner_3.jpeg" alt="">
+          </li>
+          <li>
+              <img src="/imagen/banner/banner_4.jpeg" alt="">
+          </li>
+          </ul>
+      </div>
   
     
     <div class="fundacion_info">
@@ -84,52 +96,60 @@
 
     <h1 class="titulo">Nuestros Servicios</h1>
 
-    <!-- contendor de servicios -->
-    <div class="contenedor-servicios">
-        <div class="fila-servicios">
-          <div class="servicio" onclick="toggleInfo('veterinaria')">
-            <h3>Veterinaria</h3>
-            <div id="veterinaria-info" class="info hidden">
-              <p>Para que cuides de la salud de tu nuevo mejor amigo, puedes llevarlo a nuestra veterinaria de confianza CENTRAL DE URGENCIAS VETERINARIAS</p>
+    <div class="container">
+        <div class="service" onclick="toggleService('maltrato')">
+            <h2>Maltrato Animal</h2>
+            <p>Si ves un animal que está siendo maltratado, toma evidencia y contáctanos.</p>
+            <div id="maltratoDetails" class="service-details">
+                <p>Toma evidencia de lo que está sucediendo durante el periodo de tiempo que puedas...</p>
+                <p>Escríbenos al WhatsApp <a href="tel:00000000">00000000</a></p>
+                <p>o ven a las instalaciones del CAPA y adopta.</p>
             </div>
-          </div>
-    
-          <div class="servicio" onclick="toggleInfo('maltratoAnimal')">
-            <h3>Maltrato Animal</h3>
-            <div id="maltratoAnimal-info" class="info hidden">
-              <p>Si ves un animal que está siendo maltratado por favor toma evidencia de lo que está sucediendo 
-                durante el periodo de tiempo que puedas, esto con el fin de evidenciar que el maltrato no es 
-                momentáneo si no de manera recurrente, se deben tener registros y pruebas del caso: 
-                Fotos, videos y testimonios que sean útiles a la hora de instaurar la denuncia. 
-                "preguntar si se puede colocar link" Escribenos al WhatsApp 320 360 6061 
-                o ven a las instalaciones del CAPA y adopta. Centro de Atención y Protección Animal.</p>
-            </div>
-          </div>
-    
-          <div class="servicio" onclick="toggleInfo('desparasitacion')">
-            <h3>Desparasitación</h3>
-            <div id="desparasitacion-info" class="info hidden">
-              <p>Ser hogar de paso no es una tarea fácil, así mismo debemos estudiar si puedes ser hogar de paso,
-                los requerimientos son:
-                <ul>-Entender la responsabilidad que es tener un animal en casa, en especial si es un cachorro.</ul>
-                <ul>-Uno de los puntos principales es que debes tener tiempo para ellos y ayudarnos con su educación.</ul>
-                <ul>-Muchos de los rescatados no cuentan con ningún elemento, por está razón buscamos espacios que nos puedan ayudar con los elementos básicos de su permanencia.</ul> 
-              </p>
-              </div>
-          </div>
         </div>
     
-       <!--  <div class="fila-servicios">
-          <div class="servicio" onclick="toggleInfo('fiestas')">
-            <h3>Fiestas para Mascotas</h3>
-            <div id="fiestas-info" class="info hidden">
-              <p>Celebra ocasiones especiales con tus mascotas y otros amantes de los animales.</p>
+        <div class="service" onclick="toggleService('veterinaria')">
+            <h2>Veterinaria</h2>
+            <p>Lleva a tu mejor amigo a nuestra veterinaria de confianza.</p>
+            <div id="veterinariaDetails" class="service-details">
+                <p>Para cuidar de la salud de tu mascota, visita nuestra veterinaria CENTRAL DE URGENCIAS VETERINARIAS.</p>
             </div>
-          </div>
-          </div> 
-      </div>-->
+        </div>
+    
+        <div class="service" onclick="toggleService('rescate')">
+            <h2>Rescate de Emergencia</h2>
+            <p>En momentos críticos, movilizamos equipos de rescate para salvar animales afectados por desastres naturales y otras emergencias.</p>
+            <div id="rescateDetails" class="service-details">
+                <p>En casos de desastres naturales u otras emergencias, la fundación moviliza equipos para rescatar y brindar ayuda a animales afectados, asegurando su supervivencia y bienestar en momentos críticos</p>
+            </div>
+        </div>
+        
+        <div class="service" onclick="toggleService('educacion')">
+            <h2>Educación sobre Bienestar Animal</h2>
+            <p>Respondemos a situaciones de emergencia para rescatar animales, brindándoles el cuidado necesario para su recuperación física y emocional.</p>
+            <div id="educacionDetails" class="service-details">
+                <p>Proporcionan programas educativos para concientizar a la comunidad sobre el bienestar animal. Esto incluye talleres, charlas y material informativo para fomentar el respeto y la comprensión hacia los animales.</p>
+            </div>
+        </div>
+    
+        <div class="service" onclick="toggleService('voluntariado')">
+            <h2>Programas de Voluntariado</h2>
+            <p>Fomentamos la participación activa de la comunidad a través de programas de voluntariado</p>
+            <div id="voluntariadoDetails" class="service-details">
+                <p>Ofrecen oportunidades para que individuos se involucren como voluntarios, contribuyendo con su tiempo y habilidades para apoyar las diversas actividades de la fundación en beneficio de los animales.</p>
+            </div>
+        </div>
+    
+        <div class="service" onclick="toggleService('derechos')">
+            <h2>Defensa y Activismo</h2>
+            <p>Abogamos por los derechos de los animales</p>
+            <div id="derechosDetails" class="service-details">
+                <p>La fundación aboga por los derechos de los animales y trabaja en campañas de sensibilización para promover leyes y políticas que protejan a los animales contra el maltrato y la explotación.</p>
+            </div>
+        </div>
+    </div>
+    
 
-      
+            
         <footer>
             <p>&copy; 2023 Fundación de Rescate de Mascotas</p>
         </footer>

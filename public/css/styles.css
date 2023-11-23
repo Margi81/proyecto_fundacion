@@ -6,34 +6,6 @@ body {
     margin: 0;
 }
 
-/* Estilos del BANNER */
-.banner {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: slide 5s infinite;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-/* Fin de estilos del BANNER */
-
-
-
-
 /* estilos de encabezado y navegación */
 header {
     background-color: #333;
@@ -101,6 +73,83 @@ nav a {
     margin-inline-start: 19px;
 }
 
+/* Estilos de los banner */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 50px;
+}
+
+.slider_box {
+width: 1280px;
+height: auto;
+margin: 50px auto 0;
+overflow: hidden;
+}
+.slider_box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider_box li {
+width: 100%;
+list-style: none;
+position: relative;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: cornsilk;
+}
+
+.slider_box img{
+    width: 75%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+   45% {margin-left: -100%;}
+
+   50%{margin-left: -200%;}
+   70%{margin-left: -200%;}
+
+   75%{margin-left: -300%;}
+   100%{margin-left: -300%;}
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .slider-box{
+        width: 100%;
+    }
+
+    .texto {
+        top: 50px;
+        padding: 0;
+    }
+}
+
+/* Termina el Estilos de los banner */
+
+
+
 /* Estilos para la sección de información de la fundación */
 .fundacion_info {
     display: flex;
@@ -109,6 +158,7 @@ nav a {
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
+    border: 2px solid #5B9A8B; 
 }
 
 /* Estilos para imágenes en la sección de información de la fundación */
@@ -195,66 +245,78 @@ nav a {
 }
 
 /* Estilos para el contenedor de servicios */
-.contenedor-servicios {
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
-
-/* Estilos para las filas de servicios */
-.fila-servicios {
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
     display: flex;
+    flex-wrap: wrap; /* Permite que los servicios se envuelvan a la siguiente línea si no hay suficiente espacio */
     justify-content: space-between;
 }
-
-/* Estilos para cada servicio */
-.servicio {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+.service {
+    flex: 0 1 calc(33.33% - 10px); /* Hace que cada servicio ocupe el 33.33% del ancho, con espacio entre ellos */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
-    flex: 0 0 30%;
+    transition: box-shadow 0.3s;
+}
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.service h2 {
+    margin-top: 0;
 }
 
-/* Estilos al pasar el ratón sobre cada servicio */
-.servicio:hover {
-    background-color: #f0f0f0;
-}
-
-/* Estilos para la información de cada servicio */
-.info {
-    padding: 10px;
+.service-details {
     display: none;
 }
 
-/* Estilos para elementos ocultos */
-.hidden {
-    display: none;
-}
-
-/* Estilos para elementos visibles */
-.visible {
-    display: block;
+.service-details p {
+    margin: 5px 0;
 }
 
 /* Estilos para las quienes somos en la pag SobreNosotro.html */
 /* Estilos para la página "Quiénes Somos" */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
 #headerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
+
 
 .mision,
 .vision,
 .metas {
-    flex-basis: calc(33.33% - 20px);
-    padding: 10px;
-    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 48%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 5px;
-    margin: 10px;
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mision h2,
@@ -288,12 +350,6 @@ h1 {
     margin-top: 20px;
 }
 /* END pag SobreNosotro.html */
-
-
-
-
-
-
 
 /* Estilos para las mascotas en la pag adopta.html */
 /* Estilos para los contenedores de mascotas */
@@ -340,29 +396,56 @@ h1 {
     margin: 5px 0;
 }
 
-/* Ajusta los colores y otros estilos según tus preferencias */
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-h1 {
-    color: #333;
-    margin-top: 20px;
-}
-
 /* END Estilos de mascotas */
 
+/* Formulario de donación */
+.donation-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* END donaciones */
 
 
-
-
-
-
-/* Estilos para el pie de página */
+/* Ajustes para el footer */
 footer {
     text-align: center;
-    padding: 5px;
+    padding: 15px; /* Incrementé el padding para dar más espacio al contenido del pie de página */
     background-color: cadetblue;
-}
+    clear: both; /* Añadí clear: both para asegurarme de que el pie de página se posicione correctamente y evite posibles flotaciones */
+  }
+  
